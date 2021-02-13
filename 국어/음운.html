@@ -5,12 +5,8 @@
   <meta charset="utf-8">
   <title>음운</title>
   <style>
-    .slash {
-      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="100%" x2="100%" y2="0" stroke="gray" /></svg>');
-    }
-
-    .backslash {
-      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="0" x2="100%" y2="100%" stroke="gray" /></svg>');
+    body {
+      padding: 50px;
     }
 
     table {
@@ -19,9 +15,60 @@
       text-align: center;
     }
 
+    td {
+      background-color: lightgoldenrodyellow;
+    }
+
+    .slash {
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="100%" x2="100%" y2="0" stroke="gray" /></svg>');
+      background-color: lightgoldenrodyellow;
+    }
+
+    .backslash {
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="0" x2="100%" y2="100%" stroke="gray" /></svg>');
+      background-color: lightgoldenrodyellow;
+    }
+
+
+    .box {}
+
+    .empty {
+      background-color: khaki;
+    }
+
+    .note {
+      background-color: mediumseagreen;
+    }
+
+    .sound {
+      background-color: lightgreen;
+    }
+
+    .mouth {
+      background-color: salmon;
+      width: 70px;
+    }
+
+    .place {
+      background-color: palegreen;
+    }
+
+    .lip {
+      background-color: lightskyblue;
+    }
+
+    .high {
+      background-color: mediumpurple;
+    }
+
     #half {
       width: 200px;
       height: 31px;
+      background-color: lightskyblue;
+    }
+
+    #high_id {
+      background-color: mediumpurple;
     }
 
   </style>
@@ -29,46 +76,163 @@
 
 <body>
   <h1>음운 체계</h1>
-  <h2>모음 체계</h2>
+  <h2 class="box">모음 체계</h2>
   <table border="1">
     <tr>
-      <td>혀의 최고점의 위치</td>
-      <td colspan="2">전설 모음</td>
-      <td colspan="2">후설 모음</td>
+      <td class="place">혀의 최고점의 위치</td>
+      <td colspan="2" class="place">전설 모음</td>
+      <td colspan="2" class="place">후설 모음</td>
     </tr>
     <tr>
       <td class='backslash' style='width:60px'>
-        <div id="half">혀의 높낮이</div>입술 모양
+        <div id="half">입술모양</div>
+        <div id="high_id">혀의 높낮이</div>
       </td>
-      <td>평순 모음</td>
-      <td>원순 모음</td>
-      <td>평순 모음</td>
-      <td>원순 모음</td>
+      <td class="lip">평순 모음</td>
+      <td class="lip">원순 모음</td>
+      <td class="lip">평순 모음</td>
+      <td class="lip">원순 모음</td>
     </tr>
     <tr>
-      <td>고모음</td>
+      <td class="high">고모음</td>
       <td>ㅣ</td>
       <td>ㅟ</td>
       <td>ㅡ</td>
       <td>ㅜ</td>
     </tr>
     <tr>
-      <td>중모음</td>
+      <td class="high">중모음</td>
       <td>ㅔ</td>
       <td>ㅚ</td>
       <td>ㅓ</td>
       <td>ㅗ</td>
     </tr>
     <tr>
-      <td>저모음</td>
+      <td class="high">저모음</td>
       <td>ㅐ</td>
       <td class="slash"> </td>
       <td>ㅣ</td>
       <td class="slash"> </td>
     </tr>
   </table>
-  <table>
+  <h2 class="box">자음 체계</h2>
+  <table border="1" class="jaum">
+    <tr>
+      <td class="backslash" colspan="2">
+        <div class="mouth">소리나는 방법</div>
+        <div class="note">소리 나는 위치</div>
+      </td>
+      <td class="mouth">입술소리</td>
+      <td class="mouth">잇몸소리</td>
+      <td class="mouth">센입천장 소리</td>
+      <td class="mouth">여린입천장 소리</td>
+      <td class="mouth">목청 소리</td>
+    </tr>
+    <tr>
+      <td rowspan="3" class="note">파열음</td>
 
+      <td class="sound">예사소리</td>
+
+      <td>ㅂ</td>
+      <td>ㄷ</td>
+      <td class="empty"> </td>
+      <td>ㄱ</td>
+      <td class="empty"> </td>
+    </tr>
+    <tr>
+      <td class="sound">된소리</td>
+
+      <td>ㅃ</td>
+      <td>ㄸ</td>
+      <td class="empty"> </td>
+      <td>ㄲ</td>
+      <td class="empty"> </td>
+    </tr>
+    <tr>
+      <td class="sound">거센소리</td>
+
+      <td>ㅍ</td>
+      <td>ㅌ</td>
+      <td class="empty"> </td>
+      <td>ㅋ</td>
+      <td class="empty"> </td>
+    </tr>
+    <tr>
+      <td rowspan="3" class="note">마찰음</td>
+
+      <td class="sound">예사소리</td>
+
+      <td class="empty"> </td>
+      <td>ㅅ</td>
+      <td class="empty"> </td>
+      <td class="empty"> </td>
+      <td class="empty"> </td>
+    </tr>
+    <tr>
+      <td class="sound">된소리</td>
+
+      <td class="empty"> </td>
+      <td>ㅆ</td>
+      <td class="empty"> </td>
+      <td class="empty"> </td>
+      <td>ㅎ</td>
+    </tr>
+
+    <tr>
+      <td class="sound">거센소리</td>
+
+      <td class="empty"> </td>
+      <td class="empty"> </td>
+      <td class="empty"> </td>
+      <td class="empty"> </td>
+      <td class="empty"> </td>
+    </tr>
+    <tr>
+      <td rowspan="3" class="note">파찰음</td>
+
+      <td class="sound">예사소리</td>
+
+      <td class="empty"> </td>
+      <td class="empty"> </td>
+      <td>ㅈ</td>
+      <td class="empty"> </td>
+      <td class="empty"> </td>
+    </tr>
+    <tr>
+      <td class="sound">된소리</td>
+
+      <td class="empty"> </td>
+      <td class="empty"> </td>
+      <td>ㅉ</td>
+      <td class="empty"> </td>
+      <td class="empty"> </td>
+    </tr>
+    <tr>
+      <td class="sound">거센소리</td>
+
+      <td class="empty"> </td>
+      <td class="empty"> </td>
+      <td>ㅊ</td>
+      <td class="empty"> </td>
+      <td class="empty"> </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="note">비음</td>
+
+      <td>ㅁ</td>
+      <td>ㄴ</td>
+      <td class="empty"> </td>
+      <td>ㅇ</td>
+      <td class="empty"> </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="note">유음</td>
+      <td class="empty"> </td>
+      <td>ㄹ</td>
+      <td class="empty"> </td>
+      <td class="empty"> </td>
+      <td class="empty"> </td>
+    </tr>
   </table>
 </body>
 
