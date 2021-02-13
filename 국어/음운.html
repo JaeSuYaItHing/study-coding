@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>음운</title>
+  <style>
+    .slash {
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="100%" x2="100%" y2="0" stroke="gray" /></svg>');
+    }
+
+    .backslash {
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="0" x2="100%" y2="100%" stroke="gray" /></svg>');
+    }
+
+    table {
+      border: 1px black;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    #half {
+      width: 200px;
+      height: 31px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>음운 체계</h1>
+  <h2>모음 체계</h2>
+  <table border="1">
+    <tr>
+      <td>혀의 최고점의 위치</td>
+      <td colspan="2">전설 모음</td>
+      <td colspan="2">후설 모음</td>
+    </tr>
+    <tr>
+      <td class='backslash' style='width:60px'>
+        <div id="half">혀의 높낮이</div>입술 모양
+      </td>
+      <td>평순 모음</td>
+      <td>원순 모음</td>
+      <td>평순 모음</td>
+      <td>원순 모음</td>
+    </tr>
+    <tr>
+      <td>고모음</td>
+      <td>ㅣ</td>
+      <td>ㅟ</td>
+      <td>ㅡ</td>
+      <td>ㅜ</td>
+    </tr>
+    <tr>
+      <td>중모음</td>
+      <td>ㅔ</td>
+      <td>ㅚ</td>
+      <td>ㅓ</td>
+      <td>ㅗ</td>
+    </tr>
+    <tr>
+      <td>저모음</td>
+      <td>ㅐ</td>
+      <td class="backslash,slash"> </td>
+      <td>ㅣ</td>
+      <td class="backslash,slash"> </td>
+    </tr>
+  </table>
+</body>
+
+</html>
