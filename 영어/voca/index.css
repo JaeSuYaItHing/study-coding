@@ -1,0 +1,17 @@
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  background-color: lightgoldenrodyellow;
+}
+
+td {
+  border: 1px solid black;
+}
+
+.table_h2 {
+  background-color: khaki;
+}
+
+.wrong_answer {
+  background-color: orangered;
+}

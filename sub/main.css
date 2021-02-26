@@ -50,6 +50,10 @@ a {
   font: url(font.ttf);
 }
 
+#div {
+  padding: 20px;
+}
+
 @FONT-FACE {
   font-family: 'font';
   src: url(font.ttf);
